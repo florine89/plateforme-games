@@ -1,4 +1,13 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+
+<head>
+  <meta charset="UTF-8">
+  <title>GameHub</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/<%=cssFile%>">
+</head>
 <body>
   <header>
     <h1>
@@ -6,8 +15,10 @@
     </h1>
     <nav>
       <ul>
-        <li><a href="/game/fourchette"> Le juste prix</a></li>
-        <li><a href="/game/diceRoller">Vegas Baby!</a></li>
+        <li><a href="/">Accueil</a></li>
+        <% for (let game of games){ %>
+        <li><a href="/game/<%= game.name%>"> <%= game.title%></a></li>
+        <% } %>
       </ul>
     </nav>
   </header>
