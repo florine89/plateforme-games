@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>GameHub</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/diceRoller.css">
+</head>
+<body>
+  <nav>
+    <h1>
+      <a href="/">GameHub</a>
+    </h1>
+    
+  </nav>
+
+  <h3>Dice Roller</h3>
+
+    <div id="welcome">
+        <button id="play" class="btn" type="button">Jouer</button>
+    </div>
+    <div id="app" class="hidden">
+        <div class="form">
+            <form id="game-form">
+                <input
+                    type="range"
+                    id="dice-number-input"
+                    value="3"
+                    min="1"
+                    max="20"
+                >
+                <span id="dice-number">3</span>
+                <button class="btn">Valider le nombre de dés et lancer</button>
+            </form>
+        </div>
+        <div id="game">
+            <div class="board" id="player"></div>
+            <div class="board" id="dealer"></div>
+        </div>
+    </div>
+
+    <script src="/js/diceRoller.js"></script>
+
+</body>
+</html>
