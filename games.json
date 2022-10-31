@@ -10,5 +10,11 @@
     "title": "Dice Roller",
     "cssFile": "diceRoller.css",
     "jsFile": "diceRoller.js"
+  },
+  {
+    "name": "mon3emejeu",
+    "title": "3eme jeu",
+    "cssFile": "3jeu.css",
+    "jsFile": "3jeu.js"
   }
 ]
