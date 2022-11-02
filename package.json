@@ -1,0 +1,25 @@
+{
+  "name": "parcours",
+  "version": "1.0.0",
+  "description": "Bon, on a quelques jeux qui traînent, c'est cool ! Mais c'est le bazar !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Moai/S03E06-Atelier-GameHub-florine89.git"
+  },
+  "bugs": {
+    "url": "https://github.com/O-clock-Moai/S03E06-Atelier-GameHub-florine89/issues"
+  },
+  "homepage": "https://github.com/O-clock-Moai/S03E06-Atelier-GameHub-florine89#readme"
+}

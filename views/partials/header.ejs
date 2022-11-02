@@ -6,7 +6,9 @@
   <meta charset="UTF-8">
   <title>GameHub</title>
   <link rel="stylesheet" href="/css/style.css">
+  <% if (cssFile){%>
   <link rel="stylesheet" href="/css/<%=cssFile%>">
+  <%}%>
 </head>
 <body>
   <header>
@@ -22,4 +24,3 @@
       </ul>
     </nav>
   </header>
-  </body>

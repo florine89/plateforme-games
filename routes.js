@@ -17,12 +17,18 @@ router.get('/', (request, response) => {
 
 router.get('/game/:gameName',(request,response )=>{
     let foundGame= games.find(game => game.name.toLowerCase()===request.params.gameName.toLowerCase())
-if(!foundGame){
-  response.status(404).render('404')
+if(foundGame){
+  response.render(`${foundGame.name}`,{cssFile:foundGame.cssFile})
 }
 else {
-    response.render(`${foundGame.name}`,{cssFile:foundGame.cssFile})
-}
+
+    response.render('404',{cssFile:'404.css'})
+  }
 })
 
-module.exports= router;
+// if (!foundGame /*&& request.url!=='/'*/){
+  
+// }
+// })
+
+module.exports= router

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+main {
+    height:100vh;
+    background-image: url('../images/panda.jpg') ; /* changer l'image pour celle avec la bonne definition*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: antiquewhite;
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 3px 3px 6px black;
+
+    
+}
+h3,p {
+ font-size: 50px;
+ line-height: 100%;
+}
