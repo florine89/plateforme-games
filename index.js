@@ -20,8 +20,7 @@ app.use(express.static(__dirname+'/public'))
 app.locals.games = games;
 
 app.use((request, response, next) => {
-    // const adresseABloquer = `168.45.48.78`;
-    // récupérer leadresse ip de la personne qui est à l'origine de la reqête http
+
     let journal=[];
     const ip = request.ip;
     let date = new Date;
@@ -31,12 +30,6 @@ app.use((request, response, next) => {
     console.log(journal);
 
     next()
-    // remarque : en localhost mon ip est "::1"
-    // l'IP complète c'est (en IPv6): 0:0:0:0:0:0:0:0:1
-    // adresse ip de localhost en IPv4 : 127.0.0.1
-    // IPv4 et IPv6 sont 2 format d'adresses IP (IPv6 a été déceloppé pour régler le problème du nombr limité d'adresses IPv4 : un jour nous aurions finit par manquer d'adresses à utiliser !)
-
-    // si l'adresse ip est celle que l'on veut bloquer
 
 })
 

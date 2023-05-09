@@ -2,15 +2,11 @@ var game = {
 
 
   nbDices: null,
-
-
   victory: 0,
   defeat: 0,
 
 
   ingame: false,
-
-
   // méthodes
   init: function() {
     var playBtn = document.getElementById('play');
