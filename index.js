@@ -37,4 +37,4 @@ app.use((request, response, next) => {
 
 //On précise à express d'utiliser le fichier route opour gérer les adresses
 app.use(routes);
-app.listen((process.env.PORT), () => console.log('Server listening  on  port 3007'));
+app.listen((process.env.PORT) || 3007, () => console.log(`Server listening  on  port ${process.env.PORT || 3007}`));
