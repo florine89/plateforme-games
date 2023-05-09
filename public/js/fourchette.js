@@ -1,15 +1,15 @@
 // Objectif : identifier un nombre aléatoire comme au juste prix
 
 // 1. je définis  la fourchette max
-const max = 500; 
+let max = 500; 
 
 //je génère un nombre aléatoire
 // on le multiplie par le max pour transposer notre nombre de 0 à max
-const searchedNumber = Math.round(Math.random() * max);
+let searchedNumber = Math.round(Math.random() * max);
 //je demande à l'utilisateur d'essayer de trouver, on veille à bien récupérer un nombre
-const enteredNumber = parseInt(prompt('Quel est le nombre à trouver ?'));
+let enteredNumber = parseInt(prompt('Quel est le nombre à trouver ?'));
 // J'initialise un compteur pour compter les essais
-const attempt = 1;
+let attempt = 1;
 // Tant que l'utilisateur n'a pas saisi le nombre exact je lui redemande
 while (enteredNumber !== searchedNumber) {
     // si le joueur ne rentre rien ou autre chose qu'un nombre
@@ -21,7 +21,7 @@ while (enteredNumber !== searchedNumber) {
         enteredNumber = parseInt(prompt('C\'est plus'));
     }
     else {
-        enteredNumber = parseInt(prompt('C\'est moins'));
+        enteredNumber = parseInt(prompt('C\'est moins'))
     }
     // j'incrémente le nombre d'essais 
     attempt += 1;
