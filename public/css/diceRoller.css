@@ -1,5 +1,5 @@
 body {
-  background-color: #f39c12;
+  background-color: #76958e;
 }
 
 #app {
@@ -8,11 +8,11 @@ body {
 }
 
 #player {
-  background-color: #f39c12;
+  background-color: #7d927b;
 }
 
 #dealer {
-  background-color: #e67e22;
+  background-color: #b2dbca;
 }
 
 .board {
